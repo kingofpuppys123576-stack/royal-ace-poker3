@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0b3d2e;
+  color: white;
+  text-align: center;
+}
+
+.main {
+  padding: 20px;
+}
+
+h1 {
+  color: gold;
+}
+
+.panel {
+  background: #111;
+  padding: 20px;
+  margin: 20px auto;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.join {
+  margin-top: 15px;
+}
+
+.table {
+  background: #064d39;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.player-area {
+  margin-bottom: 15px;
+}
+
+.controls input {
+  padding: 8px;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
