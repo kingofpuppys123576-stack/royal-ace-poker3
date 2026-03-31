@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Casino Connect</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+
+  <h1>Casino Connect</h1>
+
+  <!-- MENU -->
+  <div id="menu" class="panel">
+    <button onclick="createRoom()">Create Game</button>
+    
+    <div class="join">
+      <input id="code" placeholder="Enter Room Code">
+      <button onclick="joinRoom()">Join Game</button>
+    </div>
+  </div>
+
+  <!-- GAME -->
+  <div id="game" class="panel hidden">
+
+    <div class="table">
+      <div id="community"></div>
+    </div>
+
+    <div class="player-area">
+      <div id="hand"></div>
+    </div>
+
+    <div class="controls">
+      <input id="bet" placeholder="Bet amount">
+      <button onclick="bet()">Bet</button>
+      <button onclick="next()">Next</button>
+      <button onclick="reveal()">Reveal</button>
+    </div>
+
+    <div id="pot"></div>
+
+  </div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
